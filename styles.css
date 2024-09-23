@@ -1,0 +1,187 @@
+/* Reset e Estilos Básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Menu de Navegação */
+.navbar {
+    background-color:#ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #332F2D;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    
+    color: #fcfbfb;
+}
+
+/* Hero Section - Banner Reduzido */
+.hero {
+    background-image: linear-gradient(#75583F, #4B3F35);
+    height: 60vh; /* Altura reduzida */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    padding-top: 80px; /* Para garantir que o conteúdo não fique coberto pelo menu */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background 0.3s;
+    margin: 20px;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+/* Seções */
+.sobre, .pacotes, .depoimentos, .contato {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Caixa de Pacotes */
+.pacote-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pacote {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+}
+
+.pacote h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.pacote ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.pacote ul li {
+    margin-bottom: 10px;
+}
+
+.pacote .preco {
+    font-size: 1.5rem;
+    color: #ff4500;
+}
+
+/* Separação das Seções */
+section {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #75583F;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .pacote-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Para Animação de Scroll Reveal */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Para Efeito de Destaque no Menu */
+.navbar ul li a.active {
+    color: #ff7f50;
+    font-weight: bold;
+}
