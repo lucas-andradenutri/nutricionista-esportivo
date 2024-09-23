@@ -133,7 +133,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: #2e2e2ebb;
+    background-color: #4B3F35;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -181,6 +181,6 @@ footer {
 
 /* Para Efeito de Destaque no Menu */
 .navbar ul li a.active {
-    color: #ff7f50;
+    color: #4B3F35;
     font-weight: bold;
 }
