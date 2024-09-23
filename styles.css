@@ -41,7 +41,7 @@ body {
 
 .navbar ul li a:hover {
     
-    color: #fcfbfb;
+    color: #4B3F35;
 }
 
 /* Hero Section - Banner Reduzido */
@@ -134,7 +134,7 @@ section {
 
 /* Footer */
 footer {
-    background-color: #75583F;
+    background-color: #2e2e2ebb;
     color: #fff;
     padding: 20px;
     text-align: center;
