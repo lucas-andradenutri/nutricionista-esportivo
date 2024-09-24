@@ -45,13 +45,12 @@ p{
 
 .navbar ul li a:hover {
     
-    color: #4B3F35;
+    color:  #ff4500;
 }
 
 /* Hero Section - Banner Reduzido */
 .hero {
     background-image: url(5.jpeg);
-    
     height: 60vh; /* Altura reduzida */
     display: flex;
     justify-content: center;
