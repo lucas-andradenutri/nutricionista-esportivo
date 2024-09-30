@@ -140,8 +140,9 @@ section {
 footer {
     background-color: #2D3238;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
     text-align: center; 
+    margin: 0;
 }
 
  a{
