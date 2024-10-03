@@ -50,7 +50,7 @@ p{
 
 /* Hero Section - Banner Reduzido */
 .hero {
-    background-image: url(5.jpeg);
+    background-color: #888787;
     height: 60vh; /* Altura reduzida */
     display: flex;
     justify-content: center;
